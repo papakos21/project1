@@ -13,5 +13,5 @@ def my_colors(input):
 def my_colors_map(input):
     pass
 
-    #create a dictionary
-    # using input as a key and return value
+    #create a dictionary color_dic keys are a numbers and values are color names 'red', 'green' , etc
+    # return color_dict[input]
