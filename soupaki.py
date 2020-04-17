@@ -1,14 +1,14 @@
 import bs4
-import io
+import urllib.request
 
-html_doc = io.open("input.txt")
+html_doc = ""
+with urllib.request.urlopen('http://bbc.co.uk/news') as response:
+   html_doc = response.read()
+
+#import io
+#html_doc = io.open("input.txt")
 
 soup = bs4.BeautifulSoup(html_doc, 'html.parser')
-
-
-#print(soup.h3.string)
-
-
 exclude = set(['News daily newsletter','Mobile app','Get in touch','BBC World News TV','BBC World Service Radio'])
 include = set()
 for x in soup.find_all('h3'):
