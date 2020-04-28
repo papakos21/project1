@@ -27,3 +27,6 @@ def test_my_colors_map_returns_blue_for_2():
 
 def test_my_colors_map_returns_blue_for_1():
         assert colors.my_colors_map(1) == 'black'
+
+def test_my_colors_map_returns_unknown_for_all_the_rest():
+    assert colors.my_colors_map("elena") == 'unknown'

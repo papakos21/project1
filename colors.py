@@ -16,12 +16,16 @@ def my_colors(input_number):
         return "blue"
     elif input_number == 3:
         return "green"
-    else :
+    else:
         return "unknown"
 
 
 def my_colors_map(input):
-    pass
+    color_dic = {0: "white", 1: "black", 2: "blue", 3: "green"}
+    #if input not in color_dic :
+    #if input > 3 :
+        #return "unknown"
+    return color_dic.get(input,"unknown")
 
     # create a dictionary color_dic keys are a numbers and values are color names 'red', 'green' , etc
     # return color_dict[input]
