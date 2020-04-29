@@ -1,7 +1,6 @@
 # πρόγραμμα που με βάση τα χρήματα και το επιτόκιο σου λέει σε πόσα χρόνια θα εισαι millionaire
 
-def years_million(money,epitokio):
-
+def years_million(money, epitokio):
     years = 0
     while money < 1000000:
         Akrives_epitokio = (epitokio / 100) * money
@@ -26,3 +25,4 @@ def years_million_interactive():
 
 # from epitokio import years_million_interactive
 # years_million_interactive()
+# nice
