@@ -13,4 +13,4 @@ while money < 1000000:
     money = money + Akrives_epitokio
     years = years + 1
 else:
-    print(years)
+    print("σε {} χρόνια θα είσαι millionaire!!".format(years))
