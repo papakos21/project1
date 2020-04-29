@@ -1,5 +1,9 @@
 from odd_numbers import all_odd
 
+
+def test_odd_numbers_0():
+    assert all_odd(0) == []
+
 def test_odd_numbers_1():
     assert all_odd(1) == [1]
 
