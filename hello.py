@@ -9,4 +9,6 @@ def my_print( *args):
 def greet(name):
     my_print("Hello", name )
 
+greet("elena")
+
 
