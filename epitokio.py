@@ -1,5 +1,4 @@
-# πρόγραμμα που με βάση τα χρήματα και το επιτόκιο σου λέει σε πόσα χρόνια θα εισαι millionaire
-def years_million():
+def years_million(money,epitokio):
     years = 0
     money = input("Πόσα λεφτά έχεις; :")
     money = int(money)
@@ -15,5 +14,7 @@ def years_million():
         print("σε {} χρόνια θα είσαι millionaire!!".format(years))
         return years
 
+    # πρόγραμμα που με βάση τα χρήματα και το επιτόκιο σου λέει σε πόσα χρόνια θα εισαι millionaire
 
-years_million()
+
+years_million(155,3)

@@ -1,5 +1,5 @@
-from askisi1_epitokio_avouris import years_million
+import years_millions
 
+def test_years_millions():
+    assert years_millions(155,3)==297
 
-def test_years_million_297_for_155_3():
-    assert years == int(years)
