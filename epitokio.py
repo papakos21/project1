@@ -1,10 +1,8 @@
-def years_million(money,epitokio):
-    years = 0
-    #money = input("Πόσα λεφτά έχεις; :")
-    #money = int(money)
-    #epitokio = input("Mε πόσο ετήσιο επιτόκιο %; :")
-    #epitokio = float(epitokio)
+# πρόγραμμα που με βάση τα χρήματα και το επιτόκιο σου λέει σε πόσα χρόνια θα εισαι millionaire
 
+def years_million(money,epitokio):
+
+    years = 0
     while money < 1000000:
         Akrives_epitokio = (epitokio / 100) * money
         Akrives_epitokio = float(Akrives_epitokio)
@@ -14,7 +12,17 @@ def years_million(money,epitokio):
         print("σε {} χρόνια θα είσαι millionaire!!".format(years))
         return years
 
-    # πρόγραμμα που με βάση τα χρήματα και το επιτόκιο σου λέει σε πόσα χρόνια θα εισαι millionaire
 
+def years_million_interactive():
+    money = input("Πόσα λεφτά έχεις; :")
+    money = int(money)
+    epitokio = input("Mε πόσο ετήσιο επιτόκιο %; :")
+    epitokio = float(epitokio)
 
-#years_million(100,5)
+    years = years_million(money, epitokio)
+    print("σε {} χρόνια θα είσαι millionaire!!".format(years))
+
+# in Python Console type :
+
+# from epitokio import years_million_interactive
+# years_million_interactive()
