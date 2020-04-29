@@ -1,5 +1,5 @@
-import years_millions
+from epitokio import years_million
 
-def test_years_millions():
-    assert years_millions(155,3) == 297
+def test_years_million():
+    assert years_million(155,3) == 297
 

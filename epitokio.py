@@ -1,9 +1,9 @@
 def years_million(money,epitokio):
     years = 0
-    money = input("Πόσα λεφτά έχεις; :")
-    money = int(money)
-    epitokio = input("Mε πόσο ετήσιο επιτόκιο %; :")
-    epitokio = float(epitokio)
+    #money = input("Πόσα λεφτά έχεις; :")
+    #money = int(money)
+    #epitokio = input("Mε πόσο ετήσιο επιτόκιο %; :")
+    #epitokio = float(epitokio)
 
     while money < 1000000:
         Akrives_epitokio = (epitokio / 100) * money
@@ -17,4 +17,4 @@ def years_million(money,epitokio):
     # πρόγραμμα που με βάση τα χρήματα και το επιτόκιο σου λέει σε πόσα χρόνια θα εισαι millionaire
 
 
-years_million(155,3)
+#years_million(100,5)
