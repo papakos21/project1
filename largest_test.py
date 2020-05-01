@@ -1,11 +1,11 @@
 from largest import find_largest
 
 
-def test_find_largest_with_4():
+def test_find_largest_with_1():
     assert find_largest([-3, 4, 0]) == 4
 
 
-def test_find_largest_with_3():
+def test_find_largest_with_2():
     assert find_largest([-3]) == -3
 
 
