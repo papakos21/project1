@@ -1,11 +1,10 @@
 def initials(text):
     text=text.upper()
-    print (text[0],'.',end=' ')
+    text=text.split()
+    for i in range (len(text)):
+        init=text[i]
+        print (init[0],'.',end=' ')
 
-    for x in range (len(text)):
-        if text[x] == ' ':
-            letter=text[x+1]
-            print (letter,'.', end =' ')
 
 
 
