@@ -1,6 +1,6 @@
 def all_odd(num):
     table=[]
-    num = int(num)
+    num = int(num)#afto elega
     while num > 0:
          if num % 2 == 0:
 
