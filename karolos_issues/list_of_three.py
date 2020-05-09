@@ -11,7 +11,7 @@ def get_word(input_word):
         for i in range (len(listoula)):
             listara.append(split(listoula[i]))
         return listara
-    elif len(input_word) >=9 :
+    elif len(input_word) >9 :
         return "too long!!!!"
 
 
