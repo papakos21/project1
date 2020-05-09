@@ -6,5 +6,6 @@ def find_largest(lista1):
             if lista1[i] > max_so_far:
                 max_so_far = lista1[i]
         return max_so_far
+        # return max(lista1)
     else:
         return None
