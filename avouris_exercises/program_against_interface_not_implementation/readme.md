@@ -1,0 +1,1 @@
+https://medium.com/better-programming/code-against-interfaces-not-implementations-37b30e7ab992
