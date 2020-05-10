@@ -10,6 +10,8 @@ class PredeterminedInputProvider(InputInterface):
 
     def get_input(self, descriptor):
         self.history.append(descriptor)
-        to_return = self.it.__next__()
-        self.history.append(to_return)
+
+        to_return = next(self.it,None)
+        if to_return:
+            self.history.append(to_return)
         return to_return

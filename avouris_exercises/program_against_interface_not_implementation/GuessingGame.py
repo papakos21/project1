@@ -26,16 +26,24 @@ class GuessingGame():
             welcome_message_note = first_message if not repeat else repeat_message
             welcome_message = input_interface.get_input(welcome_message_note)
 
+            if welcome_message is None: return #this is for testing mode
+
             if welcome_message.upper() == "N":
                 game = False
 
             if welcome_message.upper() == "Y":
                 points, prospatheies, random_number = 10, 0, number_generator.get_num()
 
+                if random_number is None:return #this is for testing mode
+
                 while True:
                     if prospatheies < max_attempts:
                         inp_msg = "Δώσε αριθμό από 1 έως 100 : "
                         input_number = input_interface.get_input(inp_msg)
+
+
+                        if input_number is None:return #this is for testing mode
+
 
                         if not input_is_valid(input_number):
                             continue
@@ -57,5 +65,3 @@ class GuessingGame():
 
                     elif prospatheies == max_attempts:
                         output_interface.print_output("Χάσατε με 0 πόντους!")
-
-#

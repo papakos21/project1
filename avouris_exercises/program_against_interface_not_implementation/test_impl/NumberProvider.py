@@ -9,4 +9,4 @@ class NumberProvider(RandomNumberInterface):
         self.it = numbers.__iter__()
 
     def get_num(self):
-        return self.it.__next__()
+        return next(self.it,None)
