@@ -7,9 +7,9 @@ from avouris_exercises.program_against_interface_not_implementation.interfaces i
 class GuessingGame():
 
     def game(self,
-             number_generator : RandomNumberInterface = RandomNumberProvider.RandomNumberProvider()  ,
-             input_interface : InputInterface = RegularInputProvider.RegularInputProvider(),
-             output_interface : OutputInterface = RegularOutputProvider.RegularOutputProvider()
+             number_generator: RandomNumberInterface = RandomNumberProvider.RandomNumberProvider(),
+             input_interface: InputInterface = RegularInputProvider.RegularInputProvider(),
+             output_interface: OutputInterface = RegularOutputProvider.RegularOutputProvider()
              ):
 
         def input_is_valid(inputstr_):
@@ -44,7 +44,8 @@ class GuessingGame():
                         if input_number == random_number:
                             points = points - prospatheies
                             output_interface.print_output(
-                                "Το βρήκατε μετά από {} προσπάθειες, και κερδίσατε {} πόντους".format(prospatheies, points))
+                                "Το βρήκατε μετά από {} προσπάθειες, και κερδίσατε {} πόντους".format(prospatheies,
+                                                                                                      points))
 
                             repeat = True
                             break
@@ -57,11 +58,4 @@ class GuessingGame():
                     elif prospatheies == max_attempts:
                         output_interface.print_output("Χάσατε με 0 πόντους!")
 
-
-
-
-
-
-
 #
-

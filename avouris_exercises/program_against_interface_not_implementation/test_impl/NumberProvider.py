@@ -1,4 +1,6 @@
-from avouris_exercises.program_against_interface_not_implementation.interfaces.RandomNumberInterface import RandomNumberInterface
+from avouris_exercises.program_against_interface_not_implementation.interfaces.RandomNumberInterface import \
+    RandomNumberInterface
+
 
 class NumberProvider(RandomNumberInterface):
 
