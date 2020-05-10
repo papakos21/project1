@@ -6,8 +6,9 @@ while True:
         "αν θέλεις να παίξεις πληκτρολόγησε YES ,αν θες να βγεις από το παιχνίδι πληκτρολογησε STOP :")
 
     if welcome_message == "STOP":
-        break
+
         paixnidi = False
+        break
     if welcome_message == "YES":
         prospatheies = 0
         points = 10
@@ -44,22 +45,12 @@ while True:
                 if input_number > random_number:
                     print("Ο κρυμμένος αριθμός είναι μικρότερος")
                     prospatheies += 1
-                    welcome_message = input("συνεχίζεις; Y/N : ")
-                    if welcome_message == "N":
-                        break
-                        paixnidi = False
-                    if welcome_message == "Y":
-                        continue
+
+
                 if input_number < random_number:
                     print("Ο κρυμμένος αριθμός είναι μεγαλύτερος")
                     prospatheies += 1
-                    welcome_message = input(
-                        "συνεχίζεις; Υ/N : ")
-                    if welcome_message == "N":
-                        break
-                        paixnidi = False
-                    if welcome_message == "Y":
-                        continue
+
 
             elif prospatheies == 10:
                 print("Χάσατε με 0 πόντους!")
