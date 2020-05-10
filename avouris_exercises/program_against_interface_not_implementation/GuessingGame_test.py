@@ -1,9 +1,9 @@
 import unittest
 
-from GuessingGame import GuessingGame
-from test_impl.NumberProvider import NumberProvider
-from test_impl.OutputRecorder import OutputRecorder
-from test_impl.PredeterminedInputProvider import \
+from avouris_exercises.program_against_interface_not_implementation.GuessingGame import GuessingGame
+from avouris_exercises.program_against_interface_not_implementation.test_impl.NumberProvider import NumberProvider
+from avouris_exercises.program_against_interface_not_implementation.test_impl.OutputRecorder import OutputRecorder
+from avouris_exercises.program_against_interface_not_implementation.test_impl.PredeterminedInputProvider import \
     PredeterminedInputProvider
 
 
